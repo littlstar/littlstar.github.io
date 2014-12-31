@@ -4,7 +4,7 @@ This is the official Littlstar Developer Portal.
 
 ## Clone/Initialize
 
-This portal is built on top of Jekyll, so a current version of Ruby and the Bundler gem are required.
+This portal is built on top of [Jekyll](http://jekyllrb.com/), so a current version of Ruby and the Bundler gem are required.
 
 ```bash
 git clone git@github.com:littlstar/littlstar.github.io.git
