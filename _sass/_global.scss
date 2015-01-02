@@ -1,0 +1,17 @@
+.blog {
+  ul {
+    margin: 0;
+    list-style: none;
+  }
+  .post {
+    .post-header { text-align: center; }
+  }
+}
+
+.white-panel {
+  margin: 1em 0;
+  padding: .5em 1em;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px 0px #cecece;
+}
