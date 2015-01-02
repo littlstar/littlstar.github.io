@@ -1,12 +1,22 @@
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-    <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+      <h1><a href="/">{{ site.title }}</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon">
+      <a href="#"><span>&nbsp;</span></a>
     </li>
   </ul>
   <section class="top-bar-section">
     <ul class="left">
       <li><a href="/blog">Blog</a></li>
+      <li><a href="http://developer.littlstar.com/docs">Documentation</a></li>
+    </ul>
+    <ul class="right show-for-medium-up">
+      <li><a href="/feed.xml"><i class="fa fa-rss"></i></a></li>
+      <li><a href="{{ site.social.github.url }}"><i class="fa fa-github"></i></a></li>
+      <li><a href="{{ site.social.twitter.url }}"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i></a></li>
     </ul>
   </section>
 </nav>
