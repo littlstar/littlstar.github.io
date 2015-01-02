@@ -1394,7 +1394,7 @@ $topbar-link-color-hover: $alert-color;
 $topbar-link-color-active: $alert-color;
 $topbar-link-color-active-hover: $alert-color;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: rem-calc(15);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-color-hover: $charcoal;
@@ -1455,3 +1455,6 @@ $topbar-link-color-active-hover: $alert-color;
 
 // import foundation styles
 @import 'foundation';
+
+// import custom global styles
+@import 'global';
