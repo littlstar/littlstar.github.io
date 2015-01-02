@@ -9,7 +9,9 @@ permalink: /blog/
     {% for post in site.posts %}
       <li class="white-panel">
         <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
-        <span class="post-meta subheader">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</span>
+        <span class="post-meta subheader">
+          posted {% if post.author %} by {{ post.author }}{% endif %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.meta %} • {{ post.meta }}{% endif %}
+        </span>
       </li>
     {% endfor %}
   </ul>
