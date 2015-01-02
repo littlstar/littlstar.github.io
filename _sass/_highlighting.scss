@@ -3,15 +3,15 @@
  */
 .highlight {
     @extend %vertical-rhythm !optional;
-    background: #fff;
+    background: #000;
     margin-bottom: 1em;
     padding: .5em;
     border-radius: 2px;
-    box-shadow: 0px 2px 2px 0px #cecece;
 
     code {
-      background: #fff;
+      background: #000;
       border: none;
+      color: #bbb;
     }
 
     .c     { color: #998; font-style: italic } // Comment
