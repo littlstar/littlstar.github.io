@@ -3,7 +3,56 @@ layout: default
 ---
 
 <div class="home">
-
-  <h2 class="subheader text-center">Welcome to the Littlstar Developer Portal</h2>
-
+  <div class="white-panel text-center">
+    <h2>Littlstar Developer Portal</h2>
+    <h4 class="subheader">Our developer portal contains all the information needed to help get you up and running with our <a href="/docs">API</a> and the libraries that have been created to interoperate with it.</h4>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <h6 class="subheader">Client Libraries</h6>
+    </div>
+    <div class="large-3 medium-6 columns">
+      <div class="white-panel client-library">
+        <img src="/images/ruby.png">
+        <p>coming soon...</p>
+      </div>
+    </div>
+    <div class="large-3 medium-6 columns">
+      <div class="white-panel client-library">
+        <img src="/images/node.png">
+        <p>coming soon...</p>
+      </div>
+    </div>
+    <div class="large-3 medium-6 columns">
+      <div class="white-panel client-library">
+        <img src="/images/python.png">
+        <p>coming soon...</p>
+      </div>
+    </div>
+    <div class="large-3 medium-6 columns">
+      <div class="white-panel client-library">
+        <img src="/images/php.png">
+        <p>coming soon...</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns">
+      <h6 class="subheader">Latest news</h6>
+    </div>
+    <div class="small-12 columns">
+      <div class="blog">
+        <ul class="post-list">
+          {% for post in site.posts %}
+            <li class="white-panel">
+              <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
+              <span class="post-meta subheader">
+                posted {% if post.author %} by {{ post.author }}{% endif %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.meta %} • {{ post.meta }}{% endif %}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
