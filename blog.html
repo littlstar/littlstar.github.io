@@ -10,7 +10,7 @@ permalink: /blog/
       <li class="white-panel">
         <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
         <span class="post-meta subheader">
-          posted {% if post.author %} by {{ post.author }}{% endif %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.meta %} • {{ post.meta }}{% endif %}
+          posted {% if post.author %} by {{ post.author }}{% endif %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.category %} in {{ post.category }}{% endif %}
         </span>
       </li>
     {% endfor %}

@@ -38,7 +38,7 @@ layout: default
   </div>
   <div class="row">
     <div class="small-12 columns">
-      <h6 class="subheader">Latest news</h6>
+      <h6 class="subheader">Latest from the <a href="/blog">Blog</a></h6>
     </div>
     <div class="small-12 columns">
       <div class="blog">
@@ -47,7 +47,7 @@ layout: default
             <li class="white-panel">
               <h2><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h2>
               <span class="post-meta subheader">
-                posted {% if post.author %} by {{ post.author }}{% endif %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.meta %} • {{ post.meta }}{% endif %}
+                posted {% if post.author %} by {{ post.author }}{% endif %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.category %} in {{ post.category }}{% endif %}
               </span>
             </li>
           {% endfor %}
