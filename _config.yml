@@ -17,3 +17,9 @@ social:
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  input: GFM
+
+# Google Analytics
+ga_tracking_id: UA-43519114-8
