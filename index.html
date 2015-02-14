@@ -42,16 +42,16 @@ layout: default
     </div>
     <div class="small-12 columns">
       <div class="blog">
-        <ul class="post-list">
+        <div class="post-list">
           {% for post in site.posts %}
-            <li class="white-panel">
+            <div class="white-panel">
               <h4><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h4>
               <span class="post-meta subheader">
                 posted {% if post.author %} by {{ post.author }}{% endif %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.category %} in {{ post.category }}{% endif %}
               </span>
-            </li>
+            </div>
           {% endfor %}
-        </ul>
+        </div>
       </div>
     </div>
   </div>
