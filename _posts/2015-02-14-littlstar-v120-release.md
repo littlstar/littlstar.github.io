@@ -25,6 +25,10 @@ First and foremost there are new [terms](http://developer.littlstar.com/terms/) 
 
 Oh wait, did we forget to mention at the start of this announcement that Littlstar now supports photos alongside our existing video support? Sorry about that!! But it's true, registered users are now free to upload both photos and videos. The API has been updated to provide the same or similar [endpoints](http://developer.littlstar.com/docs/#photos) for photos that already exist for videos. We are just getting started with photo support, so please be patient and stay tuned - we have much planned for the future of this functionality.
 
+Here's a photo from our CTO at the Ground Zero Memorial, embeded through our iframe code:
+
+<iframe src='https://littlstar.com/api/v1/photos/4080d488/iframe' width='640px' height='360px' frameborder='0' style='max-width:100%;display:block;margin:3em auto;' allowfullscreen></iframe>
+
 This is one of the largest releases, in terms of functionality, in Littlstar's short history. As always, for all the latest info please [subscribe](/feed.xml) or [follow us]({{ site.social.twitter.url }}), and if you'd like to reach out to let us know what else you want to see on the platform (or even just to let us know how awesome you think we are) please [contact us](mailto:support@littlstar.com) directly.
 
 Sincerely,
