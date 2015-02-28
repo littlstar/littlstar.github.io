@@ -8,6 +8,7 @@ The Littlstar platform has been designed from the ground up to fully support bot
 
 1. <a href="#uploads">Uploads</a>
 - <a href="#categories">Categories</a>
+- <a href="#hashtags">Hashtags</a>
 - <a href="#visibility">Visibility</a>
 - <a href="#downloads">Downloads</a>
 2. <a href="#encoding">Encoding</a>
@@ -25,15 +26,19 @@ Once you've successfully [registered](https://littlstar.com/register) for a new 
 
 #### Categories
 
-Adding your video or photo to one or more categories helps to better organize your video and allows us to present it to other Littlstar users that have indicated their interest in these categories. Each category is available from the left-hand side menu of our web interface and in our [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) or [iOS](https://itunes.apple.com/app/id964433932) mobile apps. They can also be independently requested and consumed through our RESTful [API](http://developer.littlstar.com/docs).
+Adding your video or photo to one or more categories helps to better organize your video and allows us to present it to other Littlstar users that have indicated their interest in these categories. Each category is available from the left-hand side menu of our web interface and in our [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) or [iOS](https://itunes.apple.com/app/id964433932) mobile apps. They can also be independently requested and consumed through our RESTful [API](http://developer.littlstar.com/docs/#categories).
+
+#### Hashtags
+
+Hashtags offer more fine-grained and dynamic control over the organization of your video or photo on the Littlstar platform. They create a community driven discovery engine that grows more and more powerful as content continues to be added and updated. To "[#hashtag](https://en.wikipedia.org/wiki/Hashtag)" your video or photo, simply include as many as you'd like in its description. Our system will handle creating the links to connect all hashtags across the platform. Each hashtag entered into your photo or video description will link to a page where all other videos and photos that share that hashtag are displayed. You can enter hashtags when you first create your photo or video and also when editing it.
 
 #### Visibility
 
-If for whatever reason you are not ready for your content to be publicly consumed, you can mark it as hidden. This will prevent your video or photo from being visible to any other user and removes it from search results. They will only be visible to you when you are logged in. We are in the process of improving this functionality to provide more fine-grained control over when and where your content can be viewed.
+If for whatever reason you are not ready for your content to be publicly consumed, you can mark it as hidden. This will prevent your video or photo from being visible to any other user and removes it from search results. They will only be visible to you when you are [logged in](https://littlstar.com/login). We are in the process of improving this functionality to provide more fine-grained control over when and where your content can be viewed.
 
 #### Downloads
 
-An uploaded video can be marked as "Downloadable." When you check "Enable Downloads" a button will be displayed below the video when it is viewed on Littlstar, and an additional version will be included in [API](http://developer.littlstar.com/docs) responses. These high quality VR optimized versions of your video are intended for local/offline viewing in a VR headset like the [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html).
+An uploaded video can be marked as "Downloadable." When you check "Enable Downloads" a button will be displayed below the video when it is viewed on Littlstar, and an additional version will be included in [API](http://developer.littlstar.com/docs/#videos) responses. These high quality VR optimized versions of your video are intended for local/offline viewing in a VR headset like the [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html).
 
 The following sections will further explain what specifically happens to your videos and photos once they've been successfully uploaded and how they are displayed across different devices.
 
@@ -46,6 +51,7 @@ The consummate staple of our platform lies in how your video or photo is manipul
 As with any digitally captured video or photo, **the higher the original quality the better the final result will be after any manipulation has occurred**. To experience the best results on our platform and to enable proper display across as many devices as possible, we recommend the following original file specifications:
 
 **Original Video Specs**
+File Size: Max 5GB
 Width: 4096 pixels (4K)
 Codec: h.264
 Format: mp4
@@ -53,7 +59,8 @@ FPS: 60
 Bitrate: 30Mbps
 
 **Original Photo Specs**
-Coming Soon...
+File Size: Max 100MB
+Format: JPEG, GIF, PNG
 
 These are not the **required** specifications, merely the **suggested** format and encoding settings that we've found to produce the highest quality output. The Littlstar platform will make every attempt to properly convert your originally uploaded file into the versions needed for properly optimized delivery.
 
@@ -63,6 +70,7 @@ When you upload a new video to Littlstar we re-encode, or transcode, it into fiv
 
 **Web**
 Width: 2048 pixels (2K)
+Height: Fit to maintain aspect ratio
 Codec: h.264
 Format: mp4
 FPS: 30
@@ -71,6 +79,7 @@ Profile: 5.1
 
 **Mobile**
 Width: 1920 pixels (1K)
+Height: Fit to maintain aspect ratio
 Codec: h.264
 Format: mp4
 FPS: 30
@@ -79,6 +88,7 @@ Profile: 4.0
 
 **WEBM**
 Width: 2048 pixels (4K)
+Height: Fit to maintain aspect ratio
 Codec: h.264
 Format: mp4
 FPS: 30
@@ -86,6 +96,7 @@ Bitrate: 5Mbps
 
 **VR**
 Width: 3072 pixels (3K)
+Height: Fit to maintain aspect ratio
 Codec: h.264
 Format: mp4
 FPS: 60
@@ -94,13 +105,14 @@ Profile: 5.1
 
 **Download**
 Width: 4096 pixels (4K)
+Height: Fit to maintain aspect ratio
 Codec: h.264
 Format: mp4
 FPS: 60
 Bitrate: 30Mbps
 Profile: 5.1
 
-These versions have been designed to work across the maximum number of devices and clients. The **web** and **webm** versions will obviously be displayed to visitors on the web. The **mobile** version is displayed on Android and iOS devices. The **VR** version is returned in API responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, the **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
+These versions have been designed to work across the maximum number of devices and clients. The **web** and **webm** versions will obviously be displayed to visitors on the web. The **mobile** version is displayed on [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) and [iOS](https://itunes.apple.com/app/id964433932) devices. The **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, the **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
 
 ##### Posters
 
@@ -108,11 +120,33 @@ Also known as "holdframes," the Littlstar platform will create a "poster image" 
 
 ##### Banners
 
-A banner is a great way to further promote your video to a wider audience and serves as a kind of advertisement for your video. Banners are **required** if you would like your video to be **featured** or **sponsored** on our platform. Currently, a banner can only be applied by [specifically requesting](mailto:support@littlstar.com?subject=VIdeo%20Banner%20Request) that one be applied manually by a member of our team. We are working on an automated system that will allow you to apply and replace a banner whenever you wish. When submitting a request for a new banner, please include a JPG image that is at least 1600px wide.
+A banner is a great way to further promote your video to a wider audience and serves as a kind of advertisement for your video. Banners are **suggested** if you would like your video to be **featured** and **required** if you would like your video to be **sponsored** on our platform. Currently, a banner can only be applied by [specifically requesting](mailto:support@littlstar.com?subject=VIdeo%20Banner%20Request) that one be applied manually by a member of our team. We are working on an automated system that will allow you to apply and replace a banner whenever you wish. When submitting a request for a new banner, please include a JPG image that is at least 1600px wide.
 
 #### Photos
 
-Coming Soon...
+When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 100MB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. The following are general processing settings used by the Littlstar platform when creating these versions to support as many devices as possible.
+
+**Large**
+Width: 1600px
+Height: Fit to maintain aspect ratio
+Format: JPEG
+
+**Medium**
+Width: 640px
+Height: Fit to maintain aspect ratio
+Format: JPEG
+
+**Small**
+Width: 250px
+Height: Fit to maintain aspect ratio
+Format: JPEG
+
+**Thumbnail**
+Width: 100px
+Height: Fit to maintain aspect ratio
+Format: JPEG
+
+These versions have been designed to work across the maximum number of devices and clients. Each version is used to display your photo in specific sections and areas across our platform. However, the originally uploaded photo is used in our player on that photo's page to ensure every visitor experiences your photo at its maximum resolution and quality.
 
 ### Mobile Apps
 
