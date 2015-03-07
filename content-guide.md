@@ -19,6 +19,7 @@ The Littlstar platform has been designed from the ground up to fully support bot
 - <a href="#photos">Photos</a>
 5. <a href="#mobile-apps">Mobile Apps</a>
 6. <a href="#api">API</a>
+7. <a href="#3d">3D</a>
 
 ### Uploads
 
@@ -155,3 +156,7 @@ Littlstar currently has native applications available for both [Android](https:/
 ### API
 
 The [Littlstar API](http://developer.littlstar.com/docs) exposes RESTful endpoints for the programmatic consumption of 360 degree content that has been uploaded to our platform. Version 1 of our API is currently in an **alpha** state, and as such all users should expect rapid changes and frequent breaks of backward compatibility. We are working hard everyday to improve the currently available functionality while adding more interactive features. If you have feedback about any issues you encounter or features/functionality that you would like to see added/improved, please [contact us](mailto:support@littlstar.com?subject=API%20Feedback) directly.
+
+<h3 id="3d">3D</h3>
+
+We are currently working closely with select content producers and early adopters to build 3D support into the platform. If you would like to be part of this process, please [contact us](mailto:support@littlstar.com?subject=3D%20Beta%20Testing) for more information on how to get involved.
