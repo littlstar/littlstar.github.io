@@ -125,7 +125,7 @@ A banner is a great way to further promote your video to a wider audience and se
 
 #### Photos
 
-When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 100MB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. The following are general processing settings used by the Littlstar platform when creating these versions to support as many devices as possible.
+When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 144MB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. The following are general processing settings used by the Littlstar platform when creating these versions to support as many devices as possible.
 
 **Large**
 Width: 1600px
