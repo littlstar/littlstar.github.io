@@ -23,11 +23,11 @@ The Littlstar platform has been designed from the ground up to fully support bot
 
 ### Uploads
 
-Once you've successfully [registered](https://littlstar.com/register) for a new account and [logged in](https://littlstar.com/login), you are free to begin [uploading](https://littlstar.com/upload). The Littlstar platform supports both videos and photos. After clicking on either the [Upload a new video](https://littlstar.com/videos/new) or [Upload a new photo](https://littlstar.com/photos/new) button on our [upload](https://littlstar.com/upload) page, you are presented with a form where you can start uploading your content and fill in the details specific to it. A title is **required** but the remainder of the information is optional.
+Once you've successfully [registered](https://littlstar.com/register) for a new account and [logged in](https://littlstar.com/login), you are free to begin [uploading](https://littlstar.com/uploads). The Littlstar platform supports both videos and photos. Our upload form allows you to drag-and-drop or click and select up to 10 videos or photos or any combination of the two simultaneously. Each individual file upload is presented as an individual form allowing you to edit the details for that file while your upload progresses. A title is **required** but the remainder of the information is optional.
 
 #### Categories
 
-Adding your video or photo to one or more categories helps to better organize your video and allows us to present it to other Littlstar users that have indicated their interest in these categories. Each category is available from the left-hand side menu of our web interface and in our [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) or [iOS](https://itunes.apple.com/app/id964433932) mobile apps. They can also be independently requested and consumed through our RESTful [API](http://developer.littlstar.com/docs/#categories).
+Adding your video or photo to one or more categories helps to better organize your content and allows us to present it to other Littlstar users that have indicated their interest in these categories. Each category is available from the left-hand side menu of our web interface and in our [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) or [iOS](https://itunes.apple.com/app/id964433932) mobile apps. They can also be independently requested and consumed through our RESTful [API](http://developer.littlstar.com/docs/#categories).
 
 #### Hashtags
 
@@ -57,63 +57,17 @@ Width: 4096 pixels (4K)
 Codec: h.264
 Format: mp4
 FPS: 60
-Bitrate: 30Mbps
+Bitrate: high as possible
 
 **Original Photo Specs**
-File Size: Max 100MB
-Format: JPEG, GIF, PNG
+File Size: Max 5GB
+Format: JPEG, PNG
 
 These are not the **required** specifications, merely the **suggested** format and encoding settings that we've found to produce the highest quality output. The Littlstar platform will make every attempt to properly convert your originally uploaded file into the versions needed for properly optimized delivery.
 
 #### Videos
 
-When you upload a new video to Littlstar we re-encode, or transcode, it into five specific versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. The following are general encode settings used by the Littlstar platform when transcoding your video into the versions necessary to support as many devices as possible.
-
-**Web**
-Width: 2048 pixels (2K)
-Height: Fit to maintain aspect ratio
-Codec: h.264
-Format: mp4
-FPS: 30
-Bitrate: 5Mbps
-Profile: 5.1
-
-**Mobile**
-Width: 1920 pixels (1K)
-Height: Fit to maintain aspect ratio
-Codec: h.264
-Format: mp4
-FPS: 30
-Bitrate: 2Mbps
-Profile: 4.0
-
-**WEBM**
-Width: 2048 pixels (4K)
-Height: Fit to maintain aspect ratio
-Codec: h.264
-Format: mp4
-FPS: 30
-Bitrate: 5Mbps
-
-**VR**
-Width: 3072 pixels (3K)
-Height: Fit to maintain aspect ratio
-Codec: h.264
-Format: mp4
-FPS: 60
-Bitrate: 6Mbps
-Profile: 5.1
-
-**Download**
-Width: 4096 pixels (4K)
-Height: Fit to maintain aspect ratio
-Codec: h.264
-Format: mp4
-FPS: 60
-Bitrate: 30Mbps
-Profile: 5.1
-
-These versions have been designed to work across the maximum number of devices and clients. The **web** and **webm** versions will obviously be displayed to visitors on the web. The **mobile** version is displayed on [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) and [iOS](https://itunes.apple.com/app/id964433932) devices. The **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, the **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
+When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. A 2k **web** and **webm** version will be displayed to visitors on the web. A 1k **mobile** version is displayed on [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) and [iOS](https://itunes.apple.com/app/id964433932) devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
 
 ##### Posters
 
@@ -125,29 +79,7 @@ A banner is a great way to further promote your video to a wider audience and se
 
 #### Photos
 
-When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 144MB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. The following are general processing settings used by the Littlstar platform when creating these versions to support as many devices as possible.
-
-**Large**
-Width: 1600px
-Height: Fit to maintain aspect ratio
-Format: JPEG
-
-**Medium**
-Width: 640px
-Height: Fit to maintain aspect ratio
-Format: JPEG
-
-**Small**
-Width: 250px
-Height: Fit to maintain aspect ratio
-Format: JPEG
-
-**Thumbnail**
-Width: 100px
-Height: Fit to maintain aspect ratio
-Format: JPEG
-
-These versions have been designed to work across the maximum number of devices and clients. Each version is used to display your photo in specific sections and areas across our platform. However, the originally uploaded photo is used in our player on that photo's page to ensure every visitor experiences your photo at its maximum resolution and quality.
+When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. Each version is used to display your photo in specific sections and areas across our platform. However, the originally uploaded photo is used in our player on that photo's page to ensure every visitor experiences your photo at its maximum resolution and quality.
 
 ### Mobile Apps
 
