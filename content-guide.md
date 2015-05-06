@@ -4,7 +4,7 @@ title: Content Guide
 permalink: /content-guide/
 ---
 
-The Littlstar platform has been designed from the ground up to fully support both 360 degree videos and photos. Our ongoing goal is to provide access to the content you upload to as many different devices as possible. As mass consumer adoption of 360 degree content is still in its infancy, we are forced to make some tough choices when it comes to when and where your content will be displayed. We will continually strive to expand the reach of your content across our network as new technologies and capabilities become more widely available. This guide will cover some basic background information regarding the best practices around uploading and viewing your content.
+The Littlstar platform has been designed from the ground up to fully support both 360&deg; videos and photos. Our ongoing goal is to provide access to the content you upload to as many different devices as possible. As mass consumer adoption of 360&deg; content is still in its infancy, we are forced to make some tough choices when it comes to when and where your content will be displayed. We will continually strive to expand the reach of your content across our network as new technologies and capabilities become more widely available. This guide will cover some basic background information regarding the best practices around uploading and viewing your content.
 
 1. <a href="#uploads">Uploads</a>
 - <a href="#categories">Categories</a>
@@ -17,9 +17,10 @@ The Littlstar platform has been designed from the ground up to fully support bot
   - <a href="#posters">Posters</a>
   - <a href="#banners">Banners</a>
 - <a href="#photos">Photos</a>
-5. <a href="#mobile-apps">Mobile Apps</a>
-6. <a href="#api">API</a>
-7. <a href="#3d">3D</a>
+3. <a href="#mobile-web">Mobile Web</a>
+4. <a href="#mobile-apps">Mobile Apps</a>
+5. <a href="#api">API</a>
+6. <a href="#3d">3D</a>
 
 ### Uploads
 
@@ -39,7 +40,7 @@ If for whatever reason you are not ready for your content to be publicly consume
 
 #### Downloads
 
-An uploaded video can be marked as "Downloadable." When you check "Enable Downloads" a button will be displayed below the video when it is viewed on Littlstar, and an additional version will be included in [API](http://developer.littlstar.com/docs/#videos) responses. These high quality VR optimized versions of your video are intended for local/offline viewing in a VR headset like the [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html).
+An uploaded video can be marked as "downloadable." When you check "Enable Downloads" a button will be displayed below the video when it is viewed on Littlstar, and an additional version will be included in [API](http://developer.littlstar.com/docs/#videos) responses. These high quality VR optimized versions of your video are intended for local/offline viewing in a VR headset like the [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html).
 
 The following sections will further explain what specifically happens to your videos and photos once they've been successfully uploaded and how they are displayed across different devices.
 
@@ -67,7 +68,7 @@ These are not the **required** specifications, merely the **suggested** format a
 
 #### Videos
 
-When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. A 2k **web** and **webm** version will be displayed to visitors on the web. A 1k **mobile** version is displayed on [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) and [iOS](https://itunes.apple.com/app/id964433932) devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
+When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. A 2K **web** and **webm** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) and [iOS](https://itunes.apple.com/app/id964433932) devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
 
 ##### Posters
 
@@ -80,6 +81,12 @@ A banner is a great way to further promote your video to a wider audience and se
 #### Photos
 
 When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. Each version is used to display your photo in specific sections and areas across our platform. However, the originally uploaded photo is used in our player on that photo's page to ensure every visitor experiences your photo at its maximum resolution and quality.
+
+### Mobile Web
+
+The performance requirements to truly enjoy this type of content means that a native app is almost a requirement. There is a limitation currently in the iPhone iOS operating system that prevents a mobile web page from playing both a video and audio stream simultaneously using WebGL, which is the technology required to play this type of video content. We are continuously investigating solutions to this limitation but a fix seems to be squarely in the hands of Apple for the foreseeable future. If we can find a work-around we will release it as soon as it is ready.
+
+Many of the currently available mobile browsers (Safari, Chrome, Firefox, etc) are steadily adding features to better support the rendering and playback of 360&deg; content. The current limitations are mostly confined to video playback, you should not experience any issues with photos. To date we have experienced the best support from [Chrome](https://www.google.com/chrome/browser/desktop/index.html) on all devices and operating systems.
 
 ### Mobile Apps
 
