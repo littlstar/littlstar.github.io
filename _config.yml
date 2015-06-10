@@ -2,7 +2,12 @@
 title: Littldev
 email: support@littlstar.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
+  The Littlstar API is a developer tool to quickly and easily build VR Cinema and 360 degree
+  photos and videos into applications. Our system houses the largest array of categorized 360
+  degree immersive content, with a social layer for following your favorite users, starring
+  your favorite content, and staying up to date with a feed of immersive content. This developer
+  portal contains all the information needed to help get you up and running with our API and the
+  libraries that have been created to inter-operate with it.
 baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'http://developer.littlstar.com' # the base hostname & protocol for your site
 
