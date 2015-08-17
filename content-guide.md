@@ -84,9 +84,9 @@ When you upload a new photo to Littlstar we process it into four specific versio
 
 ### Mobile Web
 
-The performance requirements to truly enjoy this type of content means that a native app is almost a requirement. There is a limitation currently in the iPhone iOS operating system that prevents a mobile web page from playing both a video and audio stream simultaneously using WebGL, which is the technology required to play this type of video content. We are continuously investigating solutions to this limitation but a fix seems to be squarely in the hands of Apple for the foreseeable future. If we can find a work-around we will release it as soon as it is ready.
+The performance requirements to truly enjoy this type of content means that a native app is almost a requirement. Many of the currently available mobile browsers (Safari, Chrome, Firefox, etc) are steadily adding features to better support the rendering and playback of 360&deg; content. The current limitations are mostly confined to video playback. To date we have experienced the best support from [Chrome](https://www.google.com/chrome/browser/desktop/index.html) on all devices and operating systems.
 
-Many of the currently available mobile browsers (Safari, Chrome, Firefox, etc) are steadily adding features to better support the rendering and playback of 360&deg; content. The current limitations are mostly confined to video playback, you should not experience any issues with photos. To date we have experienced the best support from [Chrome](https://www.google.com/chrome/browser/desktop/index.html) on all devices and operating systems.
+The Littlstar player will attempt to display a video or photo wherever it successfully can. When this is not possible it will "deep link" visitors into the appropriate content in our mobile apps. As browsers and devices adopt the appropriate technologies we will continually update our support where applicable.
 
 ### Mobile Apps
 
