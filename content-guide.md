@@ -28,7 +28,7 @@ Once you've successfully [registered](https://littlstar.com/register) for a new 
 
 #### Categories
 
-Adding your video or photo to one or more categories helps to better organize your content and allows us to present it to other Littlstar users that have indicated their interest in these categories. Each category is available from the left-hand side menu of our web interface and in our [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) or [iOS](https://itunes.apple.com/app/id964433932) mobile apps. They can also be independently requested and consumed through our RESTful [API](http://developer.littlstar.com/docs/#categories).
+Adding your video or photo to one or more categories helps to better organize your content and allows us to present it to other Littlstar users that have indicated their interest in these categories. Each category is available from the left-hand side menu of our web interface and in our [Android][] or [iOS][] mobile apps. They can also be independently requested and consumed through our RESTful [API](http://developer.littlstar.com/docs/#categories).
 
 #### Hashtags
 
@@ -68,7 +68,7 @@ These are not the **required** specifications, merely the **suggested** format a
 
 #### Videos
 
-When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. A 2K **web** and **webm** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) and [iOS](https://itunes.apple.com/app/id964433932) devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
+When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. A 2K **web** and **webm** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android][] and [iOS][] devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
 
 ##### Posters
 
@@ -90,7 +90,7 @@ Many of the currently available mobile browsers (Safari, Chrome, Firefox, etc) a
 
 ### Mobile Apps
 
-Littlstar currently has native applications available for both [Android](https://play.google.com/store/apps/details?id=com.littlstar.android) and [iOS](https://itunes.apple.com/app/id964433932) devices. Both of these applications are currently in **beta** release and are under heavy development. If you have feedback about any issues you encounter or features/functionality that you would like to see added/improved, please [contact us](mailto:support@littlstar.com?subject=Mobile%20App%20Feedback) directly.
+Littlstar currently has native applications available for both [Android][] and [iOS][] devices. Both of these applications are currently in **beta** release and are under heavy development. If you have feedback about any issues you encounter or features/functionality that you would like to see added/improved, please [contact us](mailto:support@littlstar.com?subject=Mobile%20App%20Feedback) directly.
 
 ### API
 
@@ -99,3 +99,6 @@ The [Littlstar API](http://developer.littlstar.com/docs) exposes RESTful endpoin
 <h3 id="3d">3D</h3>
 
 We are currently working closely with select content producers and early adopters to build 3D support into the platform. If you would like to be part of this process, please [contact us](mailto:support@littlstar.com?subject=3D%20Beta%20Testing) for more information on how to get involved.
+
+[Android]: http://lstar.co/android "Littlstar Android App"
+[iOS]: http://lstar.co/ios "Littlstar iOS App"
