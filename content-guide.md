@@ -17,10 +17,13 @@ The Littlstar platform has been designed from the ground up to fully support bot
   - <a href="#posters">Posters</a>
   - <a href="#banners">Banners</a>
 - <a href="#photos">Photos</a>
-3. <a href="#mobile-web">Mobile Web</a>
-4. <a href="#mobile-apps">Mobile Apps</a>
-5. <a href="#api">API</a>
-6. <a href="#3d">3D</a>
+3. <a href="#embedding">Embedding</a>
+- <a href="#sharing">Sharing</a>
+- <a href="#customization">Customization</a>
+4. <a href="#mobile-web">Mobile Web</a>
+5. <a href="#mobile-apps">Mobile Apps</a>
+6. <a href="#api">API</a>
+7. <a href="#3d">3D</a>
 
 ### Uploads
 
@@ -81,6 +84,33 @@ A banner is a great way to further promote your video to a wider audience and se
 #### Photos
 
 When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. Each version is used to display your photo in specific sections and areas across our platform. However, the originally uploaded photo is used in our player on that photo's page to ensure every visitor experiences your photo at its maximum resolution and quality.
+
+### Embedding
+
+Videos and photos uploaded to Littlstar can be embedded in other web pages similarly to YouTube or Vimeo videos. Under the player on single video and photo pages there is a gray button that displays the iframe embed code for that specific piece of content. Simply copy and paste this code into your own web page and the same player you see on Littlstar will be displayed on your site. Our iframe embed feature is capable of identifying a logged in user so when your content is being viewed in an iframe on another site and the viewer is logged into littlstar.com they are able to interact with the content as if they were viewing it on our platform. This means they can star your video or photo right in the embedding page. We will continue to add more and more interactivity to this feature in the future. Please see the [Mobile Web](#mobile-web) section of this guide for information regarding support for rendering of your content on mobile devices.
+
+#### Sharing
+
+Embedded videos and photos can be shared out to social media by visitors to your site. The Littlstar embed player allows sharing to Facebook, Twitter, Google+ and direct email. The sharing menu is available from the top of the player and displays a short link for easy copy-paste sharing as well as the list of available social networks.
+
+#### Customization
+
+##### Query Parameters
+
+The embed player will accept four query parameter overrides that can be used to customize the experience on a per embed basis. Each of the query parameters are outlined below showing their default value along with a short description of what they do.
+
+1. `autoplay=false` - Enable or disable automatic playback when the embed player is rendered.
+2. `loop=false` - Enable or disable automatic looping of a video when it is complete.
+3. `time=0` - Start time of the video in seconds.
+4. `fov=NUMBER` - Defines the initial Field of View for the content. By default the Littlstar player will mathematically determine an optimal FOV based on the content's dimensions. Minimum value is 0 and maximum value is 150.
+
+Here is an example of an embedded video showing how each of the above parameters can be overridden:
+
+`<iframe src='//embed.littlstar.com/videos/405?autoplay=true&loop=true&time=30&fov=100' width='640px' height='360px' class='lsplayer-frame' frameborder='0' allowfullscreen></iframe>`
+
+##### Javascript SDK
+
+In addition to the URL specific query parameter overrides outlined above, we offer a Javascript SDK that can be included on your site that offers advanced configuration and control options for one or more iframes. This SDK exposes each iframe element on the page individually through an emitted Javascript event so you can customize each piece of content dynamically - while your page is loading. For more in-depth documentation and examples please see the [official documentation](http://developer.littlstar.com/lsplayer-iframe-sdk/doc/).
 
 ### Mobile Web
 
