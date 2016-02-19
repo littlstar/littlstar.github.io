@@ -43,7 +43,7 @@ If for whatever reason you are not ready for your content to be publicly consume
 
 #### Downloads
 
-An uploaded video can be marked as "downloadable." When you check "Enable Downloads" a button will be displayed below the video when it is viewed on Littlstar, and an additional version will be included in [API](http://developer.littlstar.com/docs/#videos) responses. These high quality VR optimized versions of your video are intended for local/offline viewing in a VR headset like the [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html).
+An uploaded video can be marked as "downloadable." When you check "Enable Downloads" a button will be displayed below the video when it is viewed on Littlstar, and an additional version will be included in [API](http://developer.littlstar.com/docs/#videos) responses. These high quality VR optimized versions of your video are intended for local/offline viewing in a VR headset like the [Oculus Rift](https://www.oculus.com/), [OSVR](http://www.osvr.org/), or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html).
 
 The following sections will further explain what specifically happens to your videos and photos once they've been successfully uploaded and how they are displayed across different devices.
 
@@ -55,23 +55,23 @@ The consummate staple of our platform lies in how your video or photo is manipul
 
 As with any digitally captured video or photo, **the higher the original quality the better the final result will be after any manipulation has occurred**. To experience the best results on our platform and to enable proper display across as many devices as possible, we recommend the following original file specifications:
 
-**Original Video Specs**
-File Size: Max 5GB
-Width: 4096 pixels (4K)
-Codec: h.264
-Format: mp4
-FPS: 60
-Bitrate: high as possible
+**Original Video Specs**<br />
+File Size: Max 5GB<br />
+Width: 4096 pixels (4K)<br />
+Codec: h.264<br />
+Format: mp4<br />
+FPS: 60<br />
+Bitrate: high as possible<br />
 
-**Original Photo Specs**
-File Size: Max 5GB
-Format: JPEG, PNG
+**Original Photo Specs**<br />
+File Size: Max 5GB<br />
+Format: JPEG, PNG<br />
 
 These are not the **required** specifications, merely the **suggested** format and encoding settings that we've found to produce the highest quality output. The Littlstar platform will make every attempt to properly convert your originally uploaded file into the versions needed for properly optimized delivery.
 
 #### Videos
 
-When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. A 2K **web** and **webm** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android][] and [iOS][] devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
+When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. A 2K **web** and **webm** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android][] and [iOS][] devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/), [OSVR](http://www.osvr.org/), or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
 
 ##### Posters
 
@@ -79,11 +79,11 @@ Also known as "holdframes," the Littlstar platform will create a "poster image" 
 
 ##### Banners
 
-A banner is a great way to further promote your video to a wider audience and serves as a kind of advertisement for your video. Banners are **suggested** if you would like your video to be **featured** and **required** if you would like your video to be **sponsored** on our platform. Currently, a banner can only be applied by [specifically requesting](mailto:support@littlstar.com?subject=VIdeo%20Banner%20Request) that one be applied manually by a member of our team. We are working on an automated system that will allow you to apply and replace a banner whenever you wish. When submitting a request for a new banner, please include a JPG image that is at least 1600px wide.
+A banner is a great way to further promote your video to a wider audience and serves as a kind of advertisement for your video. Banners are **suggested** if you would like your video to be **featured** and **required** if you would like your video to be **sponsored** on our platform. Currently, a banner can only be applied by [specifically requesting](mailto:support@littlstar.com?subject=VIdeo%20Banner%20Request) that one be applied manually by the Littstar Content team. We are working on an automated system that will allow you to apply and replace a banner whenever you wish. When submitting a request for a new banner, please include a JPG or PNG formatted image that is **at least** 1920x1080 pixels.
 
 #### Photos
 
-When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. We are working on a public HTTP import URL feature which will allow for sizes in excess of this limit. These versions have been designed to work across the maximum number of devices and clients. Each version is used to display your photo in specific sections and areas across our platform. However, the originally uploaded photo is used in our player on that photo's page to ensure every visitor experiences your photo at its maximum resolution and quality.
+When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. Each version is used to display your photo in specific sections and areas across our platform. However, the originally uploaded photo is used in our player on that photo's page to ensure every visitor experiences your photo at its maximum resolution and quality.
 
 ### Embedding
 
@@ -124,7 +124,7 @@ Littlstar currently has native applications available for both [Android][] and [
 
 ### API
 
-The [Littlstar API](http://developer.littlstar.com/docs) exposes RESTful endpoints for the programmatic consumption of 360 degree content that has been uploaded to our platform. Version 1 of our API is currently in an **alpha** state, and as such all users should expect rapid changes and frequent breaks of backward compatibility. We are working hard everyday to improve the currently available functionality while adding more interactive features. If you have feedback about any issues you encounter or features/functionality that you would like to see added/improved, please [contact us](mailto:support@littlstar.com?subject=API%20Feedback) directly.
+The [Littlstar API](http://developer.littlstar.com/docs) exposes RESTful endpoints for the programmatic consumption of 360&deg; content that has been uploaded to our platform. Version 1 of our API is currently in an **alpha** state, and as such all users should expect rapid changes and frequent breaks of backward compatibility. We are working hard everyday to improve the currently available functionality while adding more interactive features. If you have feedback about any issues you encounter or features/functionality that you would like to see added/improved, please [contact us](mailto:support@littlstar.com?subject=API%20Feedback) directly.
 
 <h3 id="3d">3D</h3>
 
