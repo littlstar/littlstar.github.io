@@ -20,10 +20,11 @@ The Littlstar platform has been designed from the ground up to fully support bot
 3. <a href="#embedding">Embedding</a>
 - <a href="#sharing">Sharing</a>
 - <a href="#customization">Customization</a>
-4. <a href="#mobile-web">Mobile Web</a>
-5. <a href="#mobile-apps">Mobile Apps</a>
-6. <a href="#api">API</a>
-7. <a href="#3d">3D</a>
+4. <a href="#sponsored-vs-featured">Sponsored vs Featured</a>
+5. <a href="#mobile-web">Mobile Web</a>
+6. <a href="#mobile-apps">Mobile Apps</a>
+7. <a href="#api">API</a>
+8. <a href="#3d">3D</a>
 
 ### Uploads
 
@@ -79,7 +80,7 @@ Also known as "holdframes," the Littlstar platform will create a "poster image" 
 
 ##### Banners
 
-Banners are an important component of the Littlstar interface, and expression of your content's identity. A banner is a great way to properly brand and promote your video on our platform. Banners are **suggested** if you would like your video to be **featured** and **required** if you would like your video to be **sponsored**. Littlstar banner sizes are 1920x1080px and must be submitted as a .jpg or .png under 1MB to be approved. Please [email](mailto:content@littlstar.com?subject=VIdeo%20Banner%20Request) us your banner and be sure to reference your account username and include a link to your video; one of our team members will notify you when the banner has been approved and applied. Please download our [banner guideline](http://media.littlstar.com/littlstar-banner-guideline.pdf) and formatted PSD [template](http://media.littlstar.com/littlstar-banner-template.psd) to help create the best banner for your video.
+Banners are an important component of the Littlstar interface, and expression of your content's identity. A banner is a great way to properly brand and promote your video on our platform. Banners are **suggested** if you would like your video to be [featured](#sponsored-vs-featured) and **required** if you would like your video to be [sponsored](#sponsored-vs-featured). Littlstar banner sizes are 1920x1080px and must be submitted as a .jpg or .png under 1MB to be approved. Please [email](mailto:content@littlstar.com?subject=Video%20Banner%20Request) us your banner and be sure to reference your account username and include a link to your video; one of our team members will notify you when the banner has been approved and applied. Please download our [banner guideline](http://media.littlstar.com/littlstar-banner-guideline.pdf) and formatted PSD [template](http://media.littlstar.com/littlstar-banner-template.psd) to help create the best banner for your video.
 
 *Please note: We are working on an automated system that will allow you to apply and replace a banner whenever you wish.*
 
@@ -118,6 +119,16 @@ https://gist.github.com/jwerle/ba9ee6212fdcd6a3fd94
 
 In addition to the URL specific query parameter overrides outlined above, we offer a Javascript SDK that can be included on your site that offers advanced configuration and control options for one or more iframes. This SDK exposes each iframe element on the page individually through an emitted Javascript event so you can customize each piece of content dynamically - while your page is loading. For more in-depth documentation and examples please see the [official documentation](http://developer.littlstar.com/lsplayer-iframe-sdk/doc/).
 
+### Sponsored vs Featured
+
+Sponsored and featured videos are prominently displayed by our platform on the web, in our mobile apps, and in our advanced VR Head Mounted Displays (HMDs) like the GearVR and the Oculus Rift. Sponsored and featured videos are curated by our Content Team and are selected based on the content in the piece as well as the professional quality of the video and banner.
+
+Sponsored videos are showcased in the large hero section at the top of our [homepage](http://littlstar.com), as well as within any [categories](http://littlstar.com/categories) to which that video has been added. In our mobile apps sponsored videos appear before all other videos in the Home tab as well as in the top horizontal slider of the Discover tab.
+
+Featured videos are presented in horizontal sliders on our homepage and any categories to which that video has been added. In our mobile apps featured videos appear after all sponsored videos in the Home tab.
+
+To have one of your videos considered for sponsored or featured status, you must submit your request and [banner](#banners) creative to our Content Team for approval. Please [email](mailto:content@littlstar.com?subject=Video%20Sponsor%20Feature%20Request) us and be sure to reference your account username and include a link to your video; one of our team members will contact you after your request has been reviewed.
+
 ### Mobile Web
 
 The performance requirements to truly enjoy this type of content means that a native app is almost a requirement. Many of the currently available mobile browsers (Safari, Chrome, Firefox, etc) are steadily adding features to better support the rendering and playback of 360&deg; content. The current limitations are mostly confined to video playback. To date we have experienced the best support from [Chrome](https://www.google.com/chrome/browser/desktop/index.html) on all devices and operating systems.
@@ -134,7 +145,7 @@ The [Littlstar API](http://developer.littlstar.com/docs) exposes RESTful endpoin
 
 <h3 id="3d">3D</h3>
 
-We are currently working closely with select content producers and early adopters to build 3D support into the platform. If you would like to be part of this process, please [contact us](mailto:support@littlstar.com?subject=3D%20Beta%20Testing) for more information on how to get involved.
+We are currently working closely with select content producers and early adopters to build 3D support into the platform. If you would like to be part of this process, please [contact us](mailto:content@littlstar.com?subject=3D%20Beta%20Testing) for more information on how to get involved.
 
 [Android]: http://lstar.co/android "Littlstar Android App"
 [iOS]: http://lstar.co/ios "Littlstar iOS App"
