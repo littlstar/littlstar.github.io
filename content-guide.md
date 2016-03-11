@@ -79,7 +79,9 @@ Also known as "holdframes," the Littlstar platform will create a "poster image" 
 
 ##### Banners
 
-A banner is a great way to further promote your video to a wider audience and serves as a kind of advertisement for your video. Banners are **suggested** if you would like your video to be **featured** and **required** if you would like your video to be **sponsored** on our platform. Currently, a banner can only be applied by [specifically requesting](mailto:support@littlstar.com?subject=VIdeo%20Banner%20Request) that one be applied manually by the Littstar Content team. We are working on an automated system that will allow you to apply and replace a banner whenever you wish. When submitting a request for a new banner, please include a JPG or PNG formatted image that is **at least** 1920x1080 pixels.
+Banners are an important component of the Littlstar interface, and expression of your content's identity. A banner is a great way to properly brand and promote your video on our platform. Banners are **suggested** if you would like your video to be **featured** and **required** if you would like your video to be **sponsored**. Littlstar banner sizes are 1920x1080px and must be submitted as a .jpg or .png under 1MB to be approved. Please [email](mailto:content@littlstar.com?subject=VIdeo%20Banner%20Request) us your banner and be sure to reference your account username and include a link to your video; one of our team members will notify you when the banner has been approved and applied. Please download our [banner guideline](http://media.littlstar.com/littlstar-banner-guideline.pdf) and formatted PSD [template](http://media.littlstar.com/littlstar-banner-template.psd) to help create the best banner for your video.
+
+*Please note: We are working on an automated system that will allow you to apply and replace a banner whenever you wish.*
 
 #### Photos
 
@@ -107,6 +109,10 @@ The embed player will accept four query parameter overrides that can be used to 
 Here is an example of an embedded video showing how each of the above parameters can be overridden:
 
 `<iframe src='//embed.littlstar.com/videos/405?autoplay=true&loop=true&time=30&fov=100' width='640px' height='360px' class='lsplayer-frame' frameborder='0' allowfullscreen></iframe>`
+
+We have also assembled some example code showing how our embed player should be wrapped with the optimal HTML/CSS structure to ensure the player remains contained inside its parent element while maintaining proper aspect ratio:
+
+https://gist.github.com/jwerle/ba9ee6212fdcd6a3fd94
 
 ##### Javascript SDK
 
