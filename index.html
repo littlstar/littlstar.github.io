@@ -40,14 +40,12 @@ layout: default
     <div class="small-12 columns">
       <div class="blog">
         <div class="post-list">
-          {% for post in site.posts %}
-            <div class="white-panel">
-              <h4><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></h4>
-              <span class="post-meta subheader">
-                posted {% if post.author %} by {{ post.author }}{% endif %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.category %} in {{ post.category }}{% endif %}
-              </span>
-            </div>
-          {% endfor %}
+          <div class="white-panel">
+            <h4><a class="post-link" href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h4>
+            <span class="post-meta subheader">
+              posted {% if site.posts.first.author %} by {{ site.posts.first.author }}{% endif %} on {{ site.posts.first.date | date: "%b %-d, %Y" }}{% if site.posts.first.category %} in {{ site.posts.first.category }}{% endif %}
+            </span>
+          </div>
         </div>
       </div>
     </div>
