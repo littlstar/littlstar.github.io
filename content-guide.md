@@ -21,8 +21,8 @@ The Littlstar platform has been designed from the ground up to fully support bot
 - <a href="#sharing">Sharing</a>
 - <a href="#customization">Customization</a>
 4. <a href="#sponsored-vs-featured">Sponsored vs Featured</a>
-5. <a href="#mobile-web">Mobile Web</a>
-6. <a href="#mobile-apps">Mobile Apps</a>
+5. <a href="#mobile-apps">Mobile Apps</a>
+6. <a href="#mobile-web">Mobile Web</a>
 7. <a href="#api">API</a>
 8. <a href="#3d">3D</a>
 
@@ -129,15 +129,15 @@ Featured videos are presented in horizontal sliders on our homepage and any cate
 
 To have one of your videos considered for sponsored or featured status, you must submit your request and [banner](#banners) creative to our Content Team for approval. Please [email](mailto:content@littlstar.com?subject=Video%20Sponsor%20Feature%20Request) us and be sure to reference your account username and include a link to your video; one of our team members will contact you after your request has been reviewed.
 
+### Mobile Apps
+
+Littlstar currently has native applications available for both [Android][] and [iOS][] devices. Both of these applications are currently in **beta** release and are under heavy development. If you have feedback about any issues you encounter or features/functionality that you would like to see added/improved, please [contact us](mailto:support@littlstar.com?subject=Mobile%20App%20Feedback) directly.
+
 ### Mobile Web
 
 The performance requirements to truly enjoy this type of content means that a native app is almost a requirement. Many of the currently available mobile browsers (Safari, Chrome, Firefox, etc) are steadily adding features to better support the rendering and playback of 360&deg; content. The current limitations are mostly confined to video playback. To date we have experienced the best support from [Chrome](https://www.google.com/chrome/browser/desktop/index.html) on all devices and operating systems.
 
 The Littlstar player will attempt to display a video or photo wherever it successfully can. When this is not possible it will "deep link" visitors into the appropriate content in our mobile apps. As browsers and devices adopt the appropriate technologies we will continually update our support where applicable.
-
-### Mobile Apps
-
-Littlstar currently has native applications available for both [Android][] and [iOS][] devices. Both of these applications are currently in **beta** release and are under heavy development. If you have feedback about any issues you encounter or features/functionality that you would like to see added/improved, please [contact us](mailto:support@littlstar.com?subject=Mobile%20App%20Feedback) directly.
 
 ### API
 
