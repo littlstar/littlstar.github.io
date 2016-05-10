@@ -21,10 +21,12 @@ The Littlstar platform has been designed from the ground up to fully support bot
 - <a href="#sharing">Sharing</a>
 - <a href="#customization">Customization</a>
 4. <a href="#sponsored-vs-featured">Sponsored vs Featured</a>
-5. <a href="#mobile-apps">Mobile Apps</a>
-6. <a href="#mobile-web">Mobile Web</a>
-7. <a href="#api">API</a>
-8. <a href="#3d">3D</a>
+5. <a href="#head-mounted-displays">Head Mounted Displays</a>
+- <a href="#side-loading">Side Loading</a>
+6. <a href="#mobile-apps">Mobile Apps</a>
+7. <a href="#mobile-web">Mobile Web</a>
+8. <a href="#api">API</a>
+9. <a href="#3d">3D</a>
 
 ### Uploads
 
@@ -72,7 +74,7 @@ These are not the **required** specifications, merely the **suggested** format a
 
 #### Videos
 
-When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. A 1K or 2K **web** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android][] and [iOS][] devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the [Oculus Rift](https://www.oculus.com/) or [GearVR][]. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR][] style HMD.
+When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. A 1K or 2K **web** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android][] and [iOS][] devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced [Head Mounted Displays](#head-mounted-displays) (HMDs) like the [Oculus Rift](https://www.oculus.com/) or [GearVR][]. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR][] style HMD.
 
 ##### Posters
 
@@ -128,6 +130,28 @@ Sponsored videos are showcased in the large hero section at the top of our [home
 Featured videos are presented in horizontal sliders on our homepage and any categories to which that video has been added. In our mobile apps featured videos appear after all sponsored videos in the Home tab.
 
 To have one of your videos considered for sponsored or featured status, you must submit your request and [banner](#banners) creative to our Content Team for approval. Please [email](mailto:content@littlstar.com?subject=Video%20Sponsor%20Feature%20Request) us and be sure to reference your account username and include a link to your video; one of our team members will contact you after your request has been reviewed.
+
+### Head Mounted Displays
+
+Head Mounted Displays (or HMDs) are advanced VR headsets like the [Oculus Rift](https://www.oculus.com/) or [GearVR][]. Littlstar was the first 360&deg; content distribution network to offer a GearVR app and we continue to lead the way in experiencing this new medium in advanced VR headsets. All VR approved videos are curated and individually chosen by our Content Team and are selected based on the content in the piece as well as the professional quality of the video. If you would like your content included in our VR Cinema app please [email](mailto:content@littlstar.com?subject=VR%20Cinema%20Request) us and be sure to reference your account username and include a link to your video; one of our team members will contact you after your request has been reviewed.
+
+#### Side Loading
+
+The GearVR from Samsung has always offered the ability to view local videos through a feature called side loading. This involves copying a piece of content into a specific folder on the device's (Galaxy S6, S7, S7 Edge, and Note 5) internal storage. The Littlstar [GearVR][] VR Cinema app also supports this side loading functionality. This feature is intended for content creators to better test their content within the context of our app and VR UI. It is not intended to accurately represent the experience that a Littlstar end user will experience as our transcode settings may differ from those of your test content. Here are the step by step instructions to get your test content onto your device and properly displayed in the Littlstar GearVR VR Cinema app:
+
+1. Update to the latest version of our app from inside the Oculus app on your device.
+
+2. Connect your device to your computer using a USB cable and create a folder in the root directory of your phone. The folder should be named "Littlstar" (capitalization does not matter). This folder must live alongside other folders like Pictures, Documents, DCIM, Android, etc.
+
+3. Any video copied into the folder will appear in the "Library" section of the left panel in our app's UI; the same location as any videos that you've downloaded while in the app.
+
+4. We have tried to maintain file naming conventions already established by Oculus/Samsung. Therefore, you must append to the video's filename a specific set of letters to instruct our app as to the appropriate rendering system:
+
+* For over/under (top/bottom) stereoscopic: filename_OU.mp4 or filename_TB.mp4
+
+* For side-by-side stereoscopic: filename_SBS.mp4 or filename_LR.mp4 or filename_RL.mp4
+
+Capitalization does not matter here either. They are only capitalized above to emphasize the available options. After following the above steps you should be able to insert your phone into your GearVR headset and launch our app, then navigate to the Library section in the left panel and select the video you'd like to watch.
 
 ### Mobile Apps
 
