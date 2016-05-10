@@ -4,7 +4,7 @@ title: Content Guide
 permalink: /content-guide/
 ---
 
-The Littlstar platform has been designed from the ground up to fully support both 360&deg; videos and photos. Our ongoing goal is to provide access to the content you upload to as many different devices as possible. As mass consumer adoption of 360&deg; content is still in its infancy, we are forced to make some tough choices when it comes to when and where your content will be displayed. We will continually strive to expand the reach of your content across our network as new technologies and capabilities become more widely available. This guide will cover some basic background information regarding the best practices around uploading and viewing your content.
+The Littlstar platform has been designed from the ground up to fully support both 360&deg; videos and photos. Our ongoing goal is to provide access to the content you upload on as many different devices as possible. As mass consumer adoption of 360&deg; content is still in its infancy, we are forced to make some tough choices when it comes to when and where your content will be displayed. We will continually strive to expand the reach of your content across our network as new technologies and capabilities become more widely available. This guide will cover some basic background information regarding the best practices around uploading and viewing your content.
 
 1. <a href="#uploads">Uploads</a>
 - <a href="#categories">Categories</a>
@@ -72,11 +72,11 @@ These are not the **required** specifications, merely the **suggested** format a
 
 #### Videos
 
-When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. A 2K **web** and **webm** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android][] and [iOS][] devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/), [OSVR](http://www.osvr.org/), or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
+When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. A 1K or 2K **web** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android][] and [iOS][] devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/), [OSVR](http://www.osvr.org/), or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
 
 ##### Posters
 
-Also known as "holdframes," the Littlstar platform will create a "poster image" that is used to display gallery or index pages of videos. These posters are taken from your video during transcoding, and we make every attempt to choose a poster from far enough into the video to ensure a properly representative image is obtained to reflect the content of your video. In the future we will expose the functionality to submit your own posters through our web interface.
+Also known as "holdframes," the Littlstar platform will create a "poster image" that is used to display gallery or index pages of videos. These posters are taken from your video during transcoding, and we make every attempt to choose a poster from far enough into the video to ensure a properly representative image is obtained to reflect the content of your video. In the future we will expose the functionality to choose from multiple poster options or submit your own posters through our web interface.
 
 ##### Banners
 
@@ -86,11 +86,11 @@ Banners are an important component of the Littlstar interface, and expression of
 
 #### Photos
 
-When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. Each version is used to display your photo in specific sections and areas across our platform. However, the originally uploaded photo is used in our player on that photo's page to ensure every visitor experiences your photo at its maximum resolution and quality.
+When you upload a new photo to Littlstar we process it into four specific versions (in addition to the originally uploaded photo) that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. Each version is used to display your photo in specific sections and areas across our platform.
 
 ### Embedding
 
-Videos and photos uploaded to Littlstar can be embedded in other web pages similarly to YouTube or Vimeo videos. Under the player on single video and photo pages there is a gray button that displays the iframe embed code for that specific piece of content. Simply copy and paste this code into your own web page and the same player you see on Littlstar will be displayed on your site. Our iframe embed feature is capable of identifying a logged in user so when your content is being viewed in an iframe on another site and the viewer is logged into littlstar.com they are able to interact with the content as if they were viewing it on our platform. This means they can star your video or photo right in the embedding page. We will continue to add more and more interactivity to this feature in the future. Please see the [Mobile Web](#mobile-web) section of this guide for information regarding support for rendering of your content on mobile devices.
+Videos and photos uploaded to Littlstar can be embedded in other web pages similarly to YouTube or Vimeo videos. Under the player on single video and photo pages there is a gray "Embed" button that displays the iframe embed code for that specific piece of content. Simply copy and paste this code into your own web page and the same player you see on Littlstar will be displayed on your site. Our iframe embed feature is capable of identifying a logged in user so when your content is being viewed in an iframe on another site and the viewer is logged into littlstar.com they are able to interact with the content as if they were viewing it on our platform. This means they can star your video or photo right in the embedding page. We will continue to add more and more interactivity to this feature in the future. Please see the [Mobile Web](#mobile-web) section of this guide for information regarding support for rendering of your content on mobile devices.
 
 #### Sharing
 
@@ -121,7 +121,7 @@ In addition to the URL specific query parameter overrides outlined above, we off
 
 ### Sponsored vs Featured
 
-Sponsored and featured videos are prominently displayed by our platform on the web, in our mobile apps, and in our advanced VR Head Mounted Displays (HMDs) like the GearVR and the Oculus Rift. Sponsored and featured videos are curated by our Content Team and are selected based on the content in the piece as well as the professional quality of the video and banner.
+Sponsored and featured videos are prominently displayed by our platform on the web, in our mobile apps, and in our advanced VR Head Mounted Displays (HMDs) like the GearVR and the Oculus Rift. Sponsored and featured videos are curated by our Content Team and are selected based on the content in the piece as well as the professional quality of the video and its banner.
 
 Sponsored videos are showcased in the large hero section at the top of our [homepage](https://littlstar.com), as well as within any [categories](https://littlstar.com/categories) to which that video has been added. In our mobile apps sponsored videos appear before all other videos in the Home tab as well as in the top horizontal slider of the Discover tab.
 
@@ -141,7 +141,7 @@ Littlstar currently has native applications available for both [Android][] and [
 
 ### API
 
-The [Littlstar API](http://developer.littlstar.com/docs) exposes RESTful endpoints for the programmatic consumption of 360&deg; content that has been uploaded to our platform. Version 1 of our API is currently in an **alpha** state, and as such all users should expect rapid changes and frequent breaks of backward compatibility. We are working hard everyday to improve the currently available functionality while adding more interactive features. If you have feedback about any issues you encounter or features/functionality that you would like to see added/improved, please [contact us](mailto:support@littlstar.com?subject=API%20Feedback) directly.
+The [Littlstar API](http://developer.littlstar.com/docs) exposes RESTful endpoints for the programmatic consumption of 360&deg; content that has been uploaded to our platform. Version 1 of our API was officially deprecated on 4/13/2016, and will reach End of Life on 1/1/2017. We are hard at work creating the next generation of our RESTful API to provide more robust functionality as well as more security and control over access to your content. Please see [here](http://developer.littlstar.com/announcements/2016/04/13/littlstar-v1-api-deprecation.html) for more information. If you have feedback about any issues you encounter or features/functionality that you would like to see added/improved, please [contact us](mailto:support@littlstar.com?subject=API%20Feedback) directly.
 
 <h3 id="3d">3D</h3>
 
