@@ -28,7 +28,7 @@ The Littlstar platform has been designed from the ground up to fully support bot
 
 ### Uploads
 
-Once you've successfully [registered](https://littlstar.com/register) for a new account and [logged in](https://littlstar.com/login), you are free to begin [uploading](http://littlstar.com/uploads). The Littlstar platform supports both videos and photos. Our upload form allows you to drag-and-drop or click and select up to 10 videos or photos or any combination of the two simultaneously. Each individual file upload is presented as an individual form allowing you to edit the details for that file while your upload progresses. A title is **required** but the remainder of the information is optional. The Littlstar uploader currently supports the mpg, mp4, m4v, avi, ogg, mov, webm, flv, jpg, and png file types.
+Once you've successfully [registered](https://littlstar.com/register) for a new account and [logged in](https://littlstar.com/login), you are free to begin [uploading](https://littlstar.com/uploads). The Littlstar platform supports both videos and photos. Our upload form allows you to drag-and-drop or click and select up to 10 videos or photos or any combination of the two simultaneously. Each individual file upload is presented as an individual form allowing you to edit the details for that file while your upload progresses. A title is **required** but the remainder of the information is optional. The Littlstar uploader currently supports the mpg, mp4, m4v, avi, ogg, mov, webm, flv, jpg, and png file types.
 
 #### Categories
 
@@ -123,7 +123,7 @@ In addition to the URL specific query parameter overrides outlined above, we off
 
 Sponsored and featured videos are prominently displayed by our platform on the web, in our mobile apps, and in our advanced VR Head Mounted Displays (HMDs) like the GearVR and the Oculus Rift. Sponsored and featured videos are curated by our Content Team and are selected based on the content in the piece as well as the professional quality of the video and banner.
 
-Sponsored videos are showcased in the large hero section at the top of our [homepage](http://littlstar.com), as well as within any [categories](http://littlstar.com/categories) to which that video has been added. In our mobile apps sponsored videos appear before all other videos in the Home tab as well as in the top horizontal slider of the Discover tab.
+Sponsored videos are showcased in the large hero section at the top of our [homepage](https://littlstar.com), as well as within any [categories](https://littlstar.com/categories) to which that video has been added. In our mobile apps sponsored videos appear before all other videos in the Home tab as well as in the top horizontal slider of the Discover tab.
 
 Featured videos are presented in horizontal sliders on our homepage and any categories to which that video has been added. In our mobile apps featured videos appear after all sponsored videos in the Home tab.
 
