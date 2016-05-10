@@ -44,7 +44,7 @@ If for whatever reason you are not ready for your content to be publicly consume
 
 #### Downloads
 
-An uploaded video can be marked as "downloadable." When you check "Enable Downloads" a button will be displayed below the video when it is viewed on Littlstar, and an additional version will be included in [API](http://developer.littlstar.com/docs/#videos) responses. These high quality VR optimized versions of your video are intended for local/offline viewing in a VR headset like the [Oculus Rift](https://www.oculus.com/), [OSVR](http://www.osvr.org/), or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html).
+An uploaded video can be marked as "downloadable." When you check "Enable Downloads" a button will be displayed below the video when it is viewed on Littlstar, and an additional version will be included in [API](http://developer.littlstar.com/docs/#videos) responses. These high quality VR optimized versions of your video are intended for local/offline viewing in a VR headset like the [Oculus Rift](https://www.oculus.com/) or [GearVR][].
 
 The following sections will further explain what specifically happens to your videos and photos once they've been successfully uploaded and how they are displayed across different devices.
 
@@ -72,7 +72,7 @@ These are not the **required** specifications, merely the **suggested** format a
 
 #### Videos
 
-When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. A 1K or 2K **web** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android][] and [iOS][] devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the GearVR. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/), [OSVR](http://www.osvr.org/), or [GearVR](http://www.samsung.com/global/microsite/gearvr/index.html) style HMD.
+When you upload a new video to Littlstar we re-encode, or transcode, it into multiple versions that are designed to be consumed across various devices and mediums. **The file size limit for uploads though our web interface is currently 5GB**. These versions have been designed to work across the maximum number of devices and clients. A 1K or 2K **web** version will be displayed to visitors on the web. A 1K **mobile** version is displayed on [Android][] and [iOS][] devices. A **VR** version is returned in [API](http://developer.littlstar.com/docs/#videos) responses so it can be displayed in advanced Head Mounted Displays (HMDs) like the [Oculus Rift](https://www.oculus.com/) or [GearVR][]. If downloads are enabled during video creation, or while editing an existing video, a **download** version will be exposed through a button below the video on the web, as well as in API responses, so it can be downloaded and consumed locally in an [Oculus Rift](https://www.oculus.com/) or [GearVR][] style HMD.
 
 ##### Posters
 
@@ -121,7 +121,7 @@ In addition to the URL specific query parameter overrides outlined above, we off
 
 ### Sponsored vs Featured
 
-Sponsored and featured videos are prominently displayed by our platform on the web, in our mobile apps, and in our advanced VR Head Mounted Displays (HMDs) like the GearVR and the Oculus Rift. Sponsored and featured videos are curated by our Content Team and are selected based on the content in the piece as well as the professional quality of the video and its banner.
+Sponsored and featured videos are prominently displayed by our platform on the web, in our mobile apps, and in our advanced VR Head Mounted Displays (HMDs) like the [Oculus Rift](https://www.oculus.com/) or [GearVR][]. Sponsored and featured videos are curated by our Content Team and are selected based on the content in the piece as well as the professional quality of the video and its banner.
 
 Sponsored videos are showcased in the large hero section at the top of our [homepage](https://littlstar.com), as well as within any [categories](https://littlstar.com/categories) to which that video has been added. In our mobile apps sponsored videos appear before all other videos in the Home tab as well as in the top horizontal slider of the Discover tab.
 
@@ -149,3 +149,4 @@ We are currently working closely with select content producers and early adopter
 
 [Android]: http://lstar.co/android "Littlstar Android App"
 [iOS]: http://lstar.co/ios "Littlstar iOS App"
+[GearVR]: http://lstar.co/gearvr "Littlstar GearVR App"
