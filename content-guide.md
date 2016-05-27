@@ -60,7 +60,7 @@ As with any digitally captured video or photo, **the higher the original quality
 
 **Original Video Specs**<br />
 File Size: Max 5GB<br />
-Width: 4096 pixels (4K)<br />
+Resolution: 4096 pixels (4K)<br />
 Codec: h.264<br />
 Format: mp4<br />
 FPS: 60<br />
@@ -68,6 +68,7 @@ Bitrate: high as possible<br />
 
 **Original Photo Specs**<br />
 File Size: Max 5GB<br />
+Resolution: Recommended 8,000-10,000 pixels (8-10K), Max 16,000 pixels (16K)<br />
 Format: JPEG, PNG<br />
 
 These are not the **required** specifications, merely the **suggested** format and encoding settings that we've found to produce the highest quality output. The Littlstar platform will make every attempt to properly convert your originally uploaded file into the versions needed for properly optimized delivery.
