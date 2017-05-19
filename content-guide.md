@@ -35,7 +35,9 @@ Adding your video or photo to one or more categories helps to better organize yo
 
 #### Visibility
 
-If for whatever reason you are not ready for your content to be publicly consumed, you can mark it as hidden. This will prevent your video or photo from being visible to any other user and removes it from search results. They will only be visible to you when you are [logged in](https://littlstar.com/login). We are in the process of improving this functionality to provide more fine-grained control over when and where your content can be viewed.
+Content uploaded to Littlstar is subject to a binary determination of visibility. If you are a Verified Creator your content can be marked as either visible or hidden. The default setting is for Verified Creator uploads to be visible. If your account has not yet been verified you can still upload your content, however it will only be visible to you on your channel when you are logged in. At any time a Verified Creator can change their content from visible to hidden an visa-versa.
+
+We are in the process of improving this functionality to provide even more fine-grained control over when and where your content can be viewed.
 
 #### Downloads
 
