@@ -55,11 +55,15 @@ As with any digitally captured video or photo, **the higher the original quality
 
 **Original Video Specs**<br />
 File Size: Max 5GB<br />
-Resolution: 4096 pixels (4K)<br />
+Container: mp4<br />
 Codec: h.264<br />
-Format: mp4<br />
+Resolution: 4096 pixels (4K)<br />
 FPS: 60<br />
-Bitrate: high as possible<br />
+Level: 5.2<br />
+Profile: High<br />
+Bitrate: 40 Mbit<br />
+B-Frames: 0<br />
+Refs: 1<br />
 
 **Original Photo Specs**<br />
 File Size: Max 5GB<br />
